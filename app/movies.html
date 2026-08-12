@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KS Cinema Hub | Movies</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>KS</span> Cinema Hub
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="movies.html" class="active">
+            Movies
+        </a>
+
+        <a href="booking.html">
+            Booking
+        </a>
+
+        <a href="reviews.html">
+            Reviews
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="movies-page">
+
+    <div class="page-title">
+
+        <p class="section-label">
+            EXPLORE CINEMA
+        </p>
+
+        <h1>
+            Movies
+        </h1>
+
+        <p>
+            Discover your favourite movies and book your seats.
+        </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="movie-page-search">
+
+        <input
+            type="text"
+            id="movieSearch"
+            placeholder="Search for a movie..."
+            onkeyup="searchMoviesPage()"
+        >
+
+        <button onclick="searchMoviesPage()">
+            🔍 Search
+        </button>
+
+    </div>
+
+
+    <!-- FILTERS -->
+
+    <div class="movie-filters">
+
+        <button onclick="filterMoviesPage('All')">
+            All
+        </button>
+
+        <button onclick="filterMoviesPage('Telugu')">
+            Telugu
+        </button>
+
+        <button onclick="filterMoviesPage('Tamil')">
+            Tamil
+        </button>
+
+        <button onclick="filterMoviesPage('Malayalam')">
+            Malayalam
+        </button>
+
+        <button onclick="filterMoviesPage('Kannada')">
+            Kannada
+        </button>
+
+        <button onclick="filterMoviesPage('Hindi')">
+            Hindi
+        </button>
+
+        <button onclick="filterMoviesPage('English')">
+            English
+        </button>
+
+    </div>
+
+
+    <!-- MOVIES -->
+
+    <section class="all-movies-section">
+
+        <div
+            id="allMovies"
+            class="movie-grid"
+        ></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        <span>KS</span> Cinema Hub
+    </div>
+
+    <p>
+        Your world of movies.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="movies.html">
+            Movies
+        </a>
+
+        <a href="booking.html">
+            Booking
+        </a>
+
+        <a href="reviews.html">
+            Reviews
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 KS Cinema Hub. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

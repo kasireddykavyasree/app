@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KS Cinema Hub | Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>KS</span> Cinema Hub
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="movies.html">
+            Movies
+        </a>
+
+        <a href="booking.html" class="active">
+            Booking
+        </a>
+
+        <a href="reviews.html">
+            Reviews
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="booking-page">
+
+    <div class="page-title">
+
+        <p class="section-label">
+            RESERVE YOUR SEAT
+        </p>
+
+        <h1>
+            Book Your Tickets
+        </h1>
+
+        <p>
+            Choose your movie, theatre, show and favourite seats.
+        </p>
+
+    </div>
+
+
+    <div class="booking-container">
+
+
+        <!-- FORM -->
+
+        <div class="booking-form">
+
+            <h2>
+                Movie Details
+            </h2>
+
+
+            <label>
+                Movie
+            </label>
+
+            <select id="bookingMovie">
+
+                <option value="">
+                    Select Movie
+                </option>
+
+            </select>
+
+
+            <label>
+                Language
+            </label>
+
+            <select id="bookingLanguage">
+
+                <option>
+                    Telugu
+                </option>
+
+                <option>
+                    Tamil
+                </option>
+
+                <option>
+                    Malayalam
+                </option>
+
+                <option>
+                    Kannada
+                </option>
+
+                <option>
+                    Hindi
+                </option>
+
+                <option>
+                    English
+                </option>
+
+            </select>
+
+
+            <label>
+                Theatre
+            </label>
+
+            <select id="bookingTheatre">
+
+                <option>
+                    KS Cinemas - Screen 1
+                </option>
+
+                <option>
+                    KS Cinemas - Screen 2
+                </option>
+
+                <option>
+                    KS Cinemas - Screen 3
+                </option>
+
+            </select>
+
+
+            <label>
+                Date
+            </label>
+
+            <input
+                type="date"
+                id="bookingDate"
+            >
+
+
+            <label>
+                Show Time
+            </label>
+
+            <select id="bookingTime">
+
+                <option>
+                    10:00 AM
+                </option>
+
+                <option>
+                    1:30 PM
+                </option>
+
+                <option>
+                    4:30 PM
+                </option>
+
+                <option>
+                    7:30 PM
+                </option>
+
+                <option>
+                    10:30 PM
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- SEATS -->
+
+        <div class="seat-section">
+
+            <h2>
+                Select Your Seats
+            </h2>
+
+            <div class="screen">
+                SCREEN
+            </div>
+
+            <div
+                id="seats"
+                class="seats"
+            ></div>
+
+
+            <div class="seat-legend">
+
+                <span>
+
+                    <i class="legend available"></i>
+
+                    Available
+
+                </span>
+
+
+                <span>
+
+                    <i class="legend selected"></i>
+
+                    Selected
+
+                </span>
+
+
+                <span>
+
+                    <i class="legend occupied"></i>
+
+                    Occupied
+
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY -->
+
+        <div class="booking-summary">
+
+            <h2>
+                Booking Summary
+            </h2>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Movie
+                </span>
+
+                <strong id="summaryMovie">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Theatre
+                </span>
+
+                <strong id="summaryTheatre">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Date
+                </span>
+
+                <strong id="summaryDate">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Time
+                </span>
+
+                <strong id="summaryTime">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Seats
+                </span>
+
+                <strong id="summarySeats">
+                    -
+                </strong>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong>
+                    ₹<span id="totalPrice">0</span>
+                </strong>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="confirm-booking"
+                onclick="confirmBooking()"
+            >
+                Confirm Booking
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        <span>KS</span> Cinema Hub
+    </div>
+
+    <p>
+        Your world of movies.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="movies.html">
+            Movies
+        </a>
+
+        <a href="booking.html">
+            Booking
+        </a>
+
+        <a href="reviews.html">
+            Reviews
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 KS Cinema Hub. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

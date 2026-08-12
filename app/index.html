@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KS Cinema Hub | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>KS</span> Cinema Hub
+    </a>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="booking.html">Booking</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="homeSearch"
+            placeholder="Search movie..."
+            onkeypress="homeSearchEnter(event)"
+        >
+
+        <button onclick="searchMovie()">🔍</button>
+
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="moving-background">
+
+        <div class="poster-row row-one">
+
+            <img src="images/avatar.jpeg" alt="Avatar">
+            <img src="images/avatar2.jpeg" alt="Avatar 2">
+            <img src="images/avengers.jpeg" alt="Avengers">
+            <img src="images/coolie.jpeg" alt="Coolie">
+            <img src="images/Devara.jpeg" alt="Devara">
+            <img src="images/interstellar.jpeg" alt="Interstellar">
+            <img src="images/kalki.jpeg" alt="Kalki">
+            <img src="images/kanatara.jpeg" alt="Kantara">
+            <img src="images/l2empuraan.jpeg" alt="L2 Empuraan">
+            <img src="images/pushpa.jpeg" alt="Pushpa">
+            <img src="images/stree2.jpeg" alt="Stree 2">
+            <img src="images/thuglife.jpeg" alt="Thug Life">
+            <img src="images/kgf-1.jpeg" alt="KGF">
+
+            <img src="images/avatar.jpeg" alt="">
+            <img src="images/avatar2.jpeg" alt="">
+            <img src="images/avengers.jpeg" alt="">
+            <img src="images/coolie.jpeg" alt="">
+            <img src="images/Devara.jpeg" alt="">
+            <img src="images/interstellar.jpeg" alt="">
+            <img src="images/kalki.jpeg" alt="">
+            <img src="images/kanatara.jpeg" alt="">
+            <img src="images/l2empuraan.jpeg" alt="">
+            <img src="images/pushpa.jpeg" alt="">
+            <img src="images/stree2.jpeg" alt="">
+            <img src="images/thuglife.jpeg" alt="">
+            <img src="images/kgf-1.jpeg" alt="">
+
+        </div>
+
+
+        <div class="poster-row row-two">
+
+            <img src="images/thuglife.jpeg" alt="">
+            <img src="images/stree2.jpeg" alt="">
+            <img src="images/pushpa.jpeg" alt="">
+            <img src="images/l2empuraan.jpeg" alt="">
+            <img src="images/kanatara.jpeg" alt="">
+            <img src="images/kalki.jpeg" alt="">
+            <img src="images/interstellar.jpeg" alt="">
+            <img src="images/Devara.jpeg" alt="">
+            <img src="images/coolie.jpeg" alt="">
+            <img src="images/avengers.jpeg" alt="">
+            <img src="images/avatar2.jpeg" alt="">
+            <img src="images/avatar.jpeg" alt="">
+            <img src="images/imgame.jpeg" alt="">
+            <img src="images/raazi.jpeg" alt="">
+            <img src="images/lokah.jpeg" alt="">
+            <img src="images/kgf-1.jpeg" alt="">
+
+            <img src="images/thuglife.jpeg" alt="">
+            <img src="images/stree2.jpeg" alt="">
+            <img src="images/pushpa.jpeg" alt="">
+            <img src="images/l2empuraan.jpeg" alt="">
+            <img src="images/kanatara.jpeg" alt="">
+            <img src="images/kalki.jpeg" alt="">
+            <img src="images/interstellar.jpeg" alt="">
+            <img src="images/Devara.jpeg" alt="">
+            <img src="images/coolie.jpeg" alt="">
+            <img src="images/avengers.jpeg" alt="">
+            <img src="images/avatar2.jpeg" alt="">
+            <img src="images/avatar.jpeg" alt="">
+            <img src="images/imgame.jpeg" alt="">
+            <img src="images/raazi.jpeg" alt="">
+            <img src="images/lokah.jpeg" alt="">
+            <img src="images/kgf-1.jpeg" alt="">
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            ✦ YOUR WORLD OF CINEMA ✦
+        </div>
+
+        <h1>
+            Your next
+            <span>movie experience</span>
+        </h1>
+
+        <p>
+            Discover amazing movies, explore different languages
+            and book your favourite seats in just a few clicks.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="movies.html" class="primary-btn">
+                Explore Movies
+            </a>
+
+            <a href="booking.html" class="outline-btn">
+                Book Tickets
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LANGUAGE -->
+
+<section class="language-section">
+
+    <p class="section-label">
+        EXPLORE CINEMA
+    </p>
+
+    <h2>
+        Browse by Language
+    </h2>
+
+    <div class="language-buttons">
+
+        <button onclick="filterLanguage('All')">
+            All
+        </button>
+
+        <button onclick="filterLanguage('Telugu')">
+            Telugu
+        </button>
+
+        <button onclick="filterLanguage('Tamil')">
+            Tamil
+        </button>
+
+        <button onclick="filterLanguage('Malayalam')">
+            Malayalam
+        </button>
+
+        <button onclick="filterLanguage('Kannada')">
+            Kannada
+        </button>
+
+        <button onclick="filterLanguage('Hindi')">
+            Hindi
+        </button>
+
+        <button onclick="filterLanguage('English')">
+            English
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURED MOVIES -->
+
+<section class="movies-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="section-label">
+                NOW SHOWING
+            </p>
+
+            <h2>
+                Movies You'll Love
+            </h2>
+
+        </div>
+
+        <a href="movies.html">
+            View All →
+        </a>
+
+    </div>
+
+    <div
+        id="featuredMovies"
+        class="movie-grid"
+    ></div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        <span>KS</span> Cinema Hub
+    </div>
+
+    <p>
+        Your destination for movies, entertainment
+        and unforgettable cinema experiences.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="movies.html">
+            Movies
+        </a>
+
+        <a href="booking.html">
+            Booking
+        </a>
+
+        <a href="reviews.html">
+            Reviews
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 KS Cinema Hub. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
